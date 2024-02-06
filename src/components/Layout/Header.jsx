@@ -57,7 +57,12 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <img src="" alt="Store logo" />
+              <img
+                src={require('../../Assets/socialcommerce_logo.png')}
+                alt="Store logo"
+                width="200"
+                height="200"
+              />
             </Link>
           </div>
           <div className="w-[50%] relative">
@@ -309,13 +314,13 @@ const Header = ({ activeHeading }) => {
                       to="/login"
                       className="text-[18px] pr-[10px] text-[#000000b7]"
                     >
-                     Bejelentkezés |
+                      Bejelentkezés |
                     </Link>
                     <Link
                       to="/sign-up"
                       className="text-[18px] text-[#000000b7]"
                     >
-                    Regisztráció
+                      Regisztráció
                     </Link>
                   </>
                 )}
